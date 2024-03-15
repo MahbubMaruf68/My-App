@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 import { collegesData } from "../Data";
 
 export const Home = () => {
@@ -17,14 +17,14 @@ export const Home = () => {
 
   return (
     <div>
-      <h1>Here is Home Page</h1>
-      <section className="flex flex-wrap justify-around">
+      <section className="sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10">
         {collegeData.map((cData) => {
           const { id, title, body } = cData;
           return (
             <article key={id}>
               <h1>{title}</h1>
               <p>{truncateString(body, 200)}</p>
+              <Link to={title}>Learn More</Link>
             </article>
           );
         })}

@@ -3,6 +3,8 @@ import { Home } from "./Pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Notes } from "./Pages/Notes";
 import { Questions } from "./Pages/Questions";
+import "./App.css";
+import HomeInfo from "./Pages/HomeInfo";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -12,6 +14,15 @@ export default function App() {
         <>
           <Navbar />
           <Home />
+        </>
+      ),
+    },
+    {
+      path: "//:title",
+      element: (
+        <>
+          <Navbar />
+          <HomeInfo />
         </>
       ),
     },
