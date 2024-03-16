@@ -5,6 +5,7 @@ import { Notes } from "./Pages/Notes";
 import { Questions } from "./Pages/Questions";
 import "./App.css";
 import HomeInfo from "./Pages/HomeInfo";
+import { Classes } from "./Pages/Classes";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -41,6 +42,15 @@ export default function App() {
         <>
           <Navbar />
           <Questions />
+        </>
+      ),
+    },
+    {
+      path: "/classes",
+      element: (
+        <>
+          <Navbar />
+          <Classes />
         </>
       ),
     },

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { collegesData } from "../Data";
 
 export const Home = () => {
@@ -24,7 +24,9 @@ export const Home = () => {
             <article key={id}>
               <h1>{title}</h1>
               <p>{truncateString(body, 200)}</p>
-              <Link to={title}>Learn More</Link>
+              <Link to={title} state={{ id, title, body }}>
+                Learn More
+              </Link>
             </article>
           );
         })}

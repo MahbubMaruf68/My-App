@@ -35,3 +35,26 @@ export const collegesData = [
     body: "Government Shaheed Suhrawardy College (Bengali: সরকারি শহীদ সোহরাওয়ার্দী কলেজ)is a public college in Laxsmibazar near Bahadurshah Park of Old Dhaka, Bangladesh. It offers higher-secondary education (HSC).It offers bachelor's degree and master's degree programs which are affiliated to the University of Dhaka since 16 February 2017.",
   },
 ];
+
+export const YearsData = [
+  {
+    id: 1,
+    title: "First Year",
+    body: "Notes",
+  },
+  {
+    id: 2,
+    title: "Second Year",
+    body: "Notes",
+  },
+  {
+    id: 3,
+    title: "Third Year",
+    body: "Notes",
+  },
+  {
+    id: 4,
+    title: "Forth Year",
+    body: "Notes",
+  },
+];

@@ -19,6 +19,11 @@ export const Navbar = () => {
         <NavLink to="/questions">
           <li>Questions</li>
         </NavLink>
+
+        {/* For Classes */}
+        <NavLink to="/classes">
+          <li>Class</li>
+        </NavLink>
       </nav>
     </div>
   );
