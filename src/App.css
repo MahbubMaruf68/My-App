@@ -5,11 +5,12 @@ nav .active {
 section {
   display: grid;
   grid-gap: 1rem;
+  margin: 10px;
 }
 article {
-  background-color: rgb(240, 248, 255);
+  background-color: rgb(20, 30, 55);
   padding: 5px;
-  border: 2px solid black;
+  border: 2px solid rgb(92, 92, 92);
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
@@ -17,11 +18,15 @@ article {
 article:hover {
   border: 2px solid green;
   transition: all 0.5s;
-  background-color: rgb(196, 219, 239);
+  background-color: rgb(15, 25, 44);
+  border-radius: 10px;
 }
 article h1 {
   height: 80px;
 }
 #root {
-  margin: 0px 5px;
+  background-color: rgb(15, 25, 44);
+  height: 100%;
+  color: white;
+  width: 100%;
 }
